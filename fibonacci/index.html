@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="images/favicon.png">
+    
+    <title>Fibonacci checker</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkstyle.css">
+</head>
+
+<body>
+    <header>
+        <nav class="row center">
+            <h1>Fibonacci</h1>
+            <img src="images/moon.png" id="theme-icon" alt="theme icon">
+        </nav>
+    </header>
+    <main class="column">
+        <div class="main-container row center">
+            
+            <div class="wrapper about-card column">
+                <h2>About this sequence</h2>
+                <div class="text-container column">
+                    <p>The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, starting from 0 and 1. It is named after the Italian mathematician <i>Leonardo of Pisa</i>, known as Fibonacci, who introduced the sequence to Western mathematics in his 1202 book <i>Liber Abaci</i>.</p>
+                    <p>The sequence appears in nature, such as in the arrangement of leaves, the branching of trees, and the spirals of shells. The Fibonacci sequence is closely related to the <i>golden ratio</i>, an important concept in art, architecture, and nature, as the ratio of consecutive Fibonacci numbers approaches the golden ratio as the sequence progresses</p>
+                    <p>You can check if a number is part of the Fibonacci sequence using the formula, or by entering a number in the adjacent card &rarr;</p>
+                </div>
+            </div>
+            
+            <div class="right-container column">
+                <div class="wrapper formula-card row center">
+                    <p><span>formula:</span> F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub></p>
+                </div>
+                <div class="wrapper check-card column">
+                    <div class="check-header row center">
+                        <a href="#" class="reset-button" onclick="resetForm()">x reset</a>
+                    </div>
+                    <div class="check-container column">
+                        <div class="title-emoji row">
+                            <h2>is it Fibonacci?</h2>
+                            <p id="emoji"></p>
+                        </div>
+                        <div class="input-container row">
+                            <input type="number" id="number-input" placeholder="enter a number" min="0">
+                            <button id="check-button" disabled>check</button>
+                        </div>
+                        <div id="output">
+                            <p id="result-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="row center">
+        <div>&copy;2024, Mălin</div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
